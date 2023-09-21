@@ -21,6 +21,7 @@ const App = () => {
         <Navigation />
         <Routes>
           <Route path="/" element={<BookList books={books} onDelete={handleDeleteBook} />} />
+          <Route path="/components" element={<BookForm />} />
         </Routes>
         <BookForm onAdd={handleAddBook} />
       </div>
